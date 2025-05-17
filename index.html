@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Efraim Oliveira - Perito Judicial</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    :root {
+      --primary-color: #2e7d32;
+      --secondary-color: #1b5e20;
+      --text-color: #fff;
+      --bg-color: #f4f4f4;
+      --card-bg: #ffffff;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-color);
+      color: #333;
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: var(--text-color);
+      padding: 1rem 0;
+      text-align: center;
+      position: relative;
+    }
+
+    .menu-toggle {
+      display: none;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    nav ul li a {
+      color: var(--text-color);
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      display: block;
+    }
+
+    section {
+      padding: 2rem;
+      margin: auto;
+      max-width: 1000px;
+    }
+
+    h2 {
+      color: var(--secondary-color);
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+    }
+
+    footer {
+      background-color: #333;
+      color: var(--text-color);
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 1rem auto;
+      border-radius: 8px;
+    }
+
+    /* RESPONSIVO */
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        background-color: var(--primary-color);
+        padding: 1rem 0;
+      }
+
+      nav ul.show {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Efraim Oliveira</h1>
+    <p>Perito Judicial e Consultor Técnico</p>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+    <nav>
+      <ul id="menu">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre-mim">Sobre Mim</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="inicio" class="card">
+    <h2>Bem-vindo!</h2>
+    <p>Sou Efraim Oliveira, perito judicial com especialização em elétrica, tecnologia da informação e consumo de água e esgoto. Ofereço soluções técnicas precisas e éticas para atender às necessidades de escritórios de advocacia, empresas e profissionais que buscam suporte especializado em questões judiciais e técnicas.</p>
+    <img src="https://img.freepik.com/premium-photo/scales-justice-law-scale-justice-symbol-law-attorney-court-lawyer-scale-weight-judge-justice_117038-4132.jpg" alt="Justiça e perícia" />
+  </section>
+
+  <section id="sobre-mim" class="card">
+    <h2>Sobre Mim</h2>
+    <p>Sou formado em Análise e Desenvolvimento de Sistemas e técnico em Eletrotécnica, com registro no CFT. Atuo como perito judicial e consultor técnico nas áreas de elétrica, TI e consumo de água e esgoto, com experiência prática e ética profissional.</p>
+    <p>Tenho expertise em análise de consumo, verificação de medições, identificação de falhas técnicas e assessoria em demandas judiciais ou extrajudiciais, buscando sempre a verdade técnica dos fatos.</p>
+  </section>
+
+  <section id="servicos" class="card">
+    <h2>Meus Serviços</h2>
+    <ul>
+      <li>
+        <h3><i class="fas fa-bolt"></i> Perícias Judiciais - Elétrica</h3>
+        <p>Laudos técnicos e avaliações em sistemas elétricos, análise de instalações, sobrecargas, quedas de energia e infraestruturas elétricas.</p>
+      </li>
+      <li>
+        <h3><i class="fas fa-network-wired"></i> Consultoria em TI</h3>
+        <p>Auditoria de sistemas, vulnerabilidades, segurança da informação e diagnóstico de falhas técnicas em redes e softwares.</p>
+      </li>
+      <li>
+        <h3><i class="fas fa-handshake"></i> Assistência Técnica Judicial</h3>
+        <p>Apoio a escritórios de advocacia como assistente técnico. Elaboração de pareceres e manifestações em processos.</p>
+      </li>
+      <li>
+        <h3><i class="fas fa-tint"></i> Laudos de Água e Esgoto</h3>
+        <p>Avaliação de consumo de água, análise de vazamentos ocultos, medidores defeituosos, pressão de rede e tarifações indevidas. Serviços aplicáveis a residências, comércios e empresas.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="contato" class="card">
+    <h2>Contato</h2>
+    <p>Vamos conversar? Entre em contato para mais informações ou para solicitar um orçamento personalizado.</p>
+    <ul>
+      <li><strong>Telefone/WhatsApp:</strong> (21) 96863-2633</li>
+      <li><strong>E-mail:</strong> <a href="mailto:efraimoliveira10@gmail.com">efraimoliveira10@gmail.com</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Efraim Oliveira. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("menu").classList.toggle("show");
+    }
+  </script>
+</body>
+</html>
